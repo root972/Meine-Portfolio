@@ -1,0 +1,46 @@
+.contact {
+  padding: 30px;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 20px;
+  }
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.contact-card {
+  display: block;
+  padding: 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #333;
+  background: #f9f9f9;
+  transition: 0.3s ease;
+  border: 1px solid #ddd;
+
+  .icon {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    margin: 5px 0;
+  }
+
+  p {
+    font-size: 14px;
+    color: #666;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    background: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+}
