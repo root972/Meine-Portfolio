@@ -1,0 +1,47 @@
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  color: #4da6ff;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 600px;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.buttons a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #4da6ff;
+  color: white;
+  transition: 0.3s;
+}
+
+.buttons a:hover {
+  background: #1f7ed6;
+  transform: translateY(-2px);
+}
