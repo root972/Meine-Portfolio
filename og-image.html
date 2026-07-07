@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yahya Zahid Portfolio Preview</title>
+    <style>
+      :root {
+        --bg: #0f172a;
+        --panel: #ffffff;
+        --accent: #4da6ff;
+        --text: #0f172a;
+        --muted: #64748b;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        background: linear-gradient(135deg, #08111f 0%, #111827 100%);
+        color: var(--text);
+      }
+
+      .card {
+        width: 1200px;
+        height: 630px;
+        position: relative;
+        background: var(--panel);
+        padding: 84px 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      .accent-bar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 8px;
+        background: var(--accent);
+      }
+
+      .shape {
+        position: absolute;
+        right: -40px;
+        bottom: -80px;
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(77, 166, 255, 0.18) 0%, rgba(77, 166, 255, 0.03) 60%, transparent 70%);
+        pointer-events: none;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        margin-bottom: 18px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: #eaf6ff;
+        color: var(--accent);
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        font-size: 64px;
+        line-height: 1.05;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        color: var(--text);
+      }
+
+      .subtitle {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        font-size: 29px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #334155;
+      }
+
+      .role-primary {
+        color: var(--accent);
+      }
+
+      .separator {
+        color: #94a3b8;
+        font-weight: 600;
+      }
+
+      .tagline {
+        font-size: 24px;
+        color: var(--muted);
+        font-weight: 500;
+        margin-top: 4px;
+        max-width: 780px;
+        line-height: 1.45;
+      }
+
+      .footer {
+        position: absolute;
+        left: 90px;
+        bottom: 56px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #475569;
+      }
+
+      .brand-pill {
+        position: absolute;
+        top: 54px;
+        right: 90px;
+        padding: 10px 16px;
+        border-radius: 999px;
+        background: #0f172a;
+        color: white;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="accent-bar"></div>
+      <div class="shape"></div>
+      <div class="brand-pill">Portfolio</div>
+      <div class="eyebrow">QA • Frontend • Automation</div>
+      <h1>Yahya Zahid</h1>
+      <div class="subtitle">
+        <span class="role-primary">SQA Engineer</span>
+        <span class="separator">/</span>
+        <span>Jr. Frontend Developer</span>
+      </div>
+      <div class="tagline">Manual &amp; API Testing · Test Automation · Angular</div>
+      <div class="footer">meine-portfolio-liard.vercel.app</div>
+    </div>
+  </body>
+</html>
