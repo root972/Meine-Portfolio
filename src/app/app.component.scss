@@ -1,8 +1,11 @@
 .navbar {
   display: flex;
   gap: 20px;
-  padding: 15px;
+  padding: 15px 24px;
   background-color: #222;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar a {

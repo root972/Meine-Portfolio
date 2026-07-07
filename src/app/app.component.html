@@ -1,9 +1,10 @@
 <nav class="navbar">
-   <a routerLink="/dashboard">Dashboard</a> 
-   <a routerLink="/skills">Skills</a>
-    <a routerLink="/projects">Projects</a>
-    <a routerLink="/contact">Contact</a> 
-  
-  </nav>
-    <router-outlet></router-outlet>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a href="#about" (click)="scrollToSection($event, 'about')">About</a>
+  <a href="#skills" (click)="scrollToSection($event, 'skills')">Skills</a>
+  <a href="#projects" (click)="scrollToSection($event, 'projects')">Projects</a>
+  <a href="#contact" (click)="scrollToSection($event, 'contact')">Contact</a>
+</nav>
+
+<router-outlet></router-outlet>
  

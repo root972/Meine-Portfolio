@@ -1,14 +1,160 @@
-<section class="hero">
-  <h1>Hi, I'm Yahya 👋</h1>
-  <h2>QA Engineer & Frontend Developer</h2>
+<main class="dashboard-page">
+  <section id="hero" class="hero section-card">
+    <h1>Hi, I'm Yahya 👋</h1>
+    <h2>QA Engineer & Frontend Developer</h2>
 
-  <p>
-     I specialize in manual testing, automation, and building reliable web applications
-    using Angular, Playwright, and modern QA tools.
-  </p>
+    <p>
+      I specialize in manual testing, automation, and building reliable web applications
+      using Angular, Playwright, and modern QA tools.
+    </p>
 
-  <div class="buttons">
-    <a routerLink="/projects">View Projects</a>
-    <a routerLink="/contact">Contact Me</a>
-  </div>
-</section>
+    <div class="buttons">
+      <a href="#skills" (click)="scrollToSection($event, 'skills')">Explore Skills</a>
+      <a href="#projects" (click)="scrollToSection($event, 'projects')">See Projects</a>
+      <a href="#contact" (click)="scrollToSection($event, 'contact')">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="about" class="section-card">
+    <h3>About</h3>
+    <p>
+      I’m an SQA Engineer with 3+ years of experience testing web applications, currently working with Efani, a product-based company based in California, USA. I joined as their first QA hire and built their entire QA process from the ground up — including test cases, regression suites, and bug tracking workflows.
+    </p>
+    <p>
+      Since Efani’s platform is built in Angular, I worked closely with TypeScript and the frontend codebase too, which is how I picked up frontend development alongside QA. I also automated their website testing using Playwright and built out the CI/CD pipeline for the repository, significantly reducing manual regression time.
+    </p>
+    <p>
+      Before Efani, I worked at K2X Technologies and Workbox, handling manual functional, integration, and regression testing across enterprise platforms. My core toolkit includes API testing with Postman, SQL, Jira, and CI/CD validation — with Angular and Playwright rounding out the frontend and automation side.
+    </p>
+  </section>
+
+  <section id="skills" class="section-card">
+    <div class="skills-section">
+      <h3>Skills</h3>
+      <p>Technologies and tools I use as a QA Engineer and Frontend Developer.</p>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>🧪 Manual Testing</h4>
+          <span>Test Case Design</span>
+          <span>Regression Testing</span>
+          <span>Smoke Testing</span>
+          <span>Exploratory Testing</span>
+          <span>Bug Reporting</span>
+          <span>Database Testing</span>
+          <span>Cross-Browser Testing</span>
+          <span>Mobile Testing</span>
+          <span>Integration Testing</span>
+        </div>
+
+        <div class="skill-card">
+          <h4>🤖 Test Automation</h4>
+          <span>Playwright</span>
+          <span>Cypress</span>
+        </div>
+
+        <div class="skill-card">
+          <h4>🌐 API Testing</h4>
+          <span>Postman</span>
+          <span>REST APIs</span>
+          <span>Swagger</span>
+          <span>API Validation</span>
+        </div>
+
+        <div class="skill-card">
+          <h4>🔒 Security Testing</h4>
+          <span>OWASP ZAP</span>
+          <span>Vulnerability Scanning</span>
+          <span>Basic Security Assessment</span>
+          <span>Penetration Testing</span>
+        </div>
+
+        <div class="skill-card">
+          <h4>⚡ Performance Testing</h4>
+          <span>k6</span>
+          <span>Load Testing</span>
+          <span>Stress Testing</span>
+          <span>Performance Monitoring</span>
+        </div>
+
+        <div class="skill-card">
+          <h4>💻 Frontend Development</h4>
+          <span>Angular</span>
+          <span>TypeScript</span>
+          <span>HTML5</span>
+          <span>SCSS</span>
+        </div>
+
+        <div class="skill-card">
+          <h4>🛠 CI/CD & Version Control</h4>
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>GitLab</span>
+        </div>
+
+        <div class="skill-card">
+          <h4>🌐 Languages</h4>
+          <span>TypeScript</span>
+          <span>JavaScript</span>
+          <span>Python</span>
+          <span>SQL</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section-card">
+    <h3>Projects</h3>
+    <p>My recent work includes frontend builds, QA automation, and reliable testing setups.</p>
+    <div class="project-list">
+      <div class="project-item">
+        <h4>Portfolio Website</h4>
+        <p>Angular-based personal portfolio with routed pages and a polished landing experience.</p>
+      </div>
+      <div class="project-item">
+        <h4>QA Automation Suite</h4>
+        <p>Playwright-based test automation for regression and smoke testing flows.</p>
+      </div>
+    </div>
+    <a routerLink="/projects" class="route-link">Open full projects page</a>
+  </section>
+
+  <section id="contact" class="section-card">
+    <div class="contact-section">
+      <h3>Contact</h3>
+      <p>Interested in collaboration or a QA/frontend opportunity? Reach out.</p>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="https://mail.google.com/mail/?view=cm&to=myaya4455&#64;gmail.com" target="_blank">
+          <span class="icon">📧</span>
+          <h4>Email</h4>
+          <p>myaya4455&#64;gmail.com</p>
+        </a>
+
+        <a class="contact-card" href="https://www.linkedin.com/in/yahya-zahid-063061227/" target="_blank">
+          <span class="icon">💼</span>
+          <h4>LinkedIn</h4>
+          <p>View Profile</p>
+        </a>
+
+        <a class="contact-card" href="https://wa.me/491234567890" target="_blank">
+          <span class="icon">💬</span>
+          <h4>WhatsApp</h4>
+          <p>Chat with me</p>
+        </a>
+
+        <a class="contact-card" href="tel:+491234567890">
+          <span class="icon">📞</span>
+          <h4>Phone</h4>
+          <p>+49 123 456 7890</p>
+        </a>
+
+        <a class="contact-card" href="https://github.com/root972" target="_blank">
+          <span class="icon">🐙</span>
+          <h4>GitHub</h4>
+          <p>View Projects</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
