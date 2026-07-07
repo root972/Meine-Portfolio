@@ -192,9 +192,17 @@
 }
 
 .contact-card .icon {
-  font-size: 24px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 8px;
+  color: #4da6ff;
+}
+
+.contact-card .icon svg {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
 .contact-card h4 {

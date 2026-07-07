@@ -24,9 +24,17 @@
   border: 1px solid #ddd;
 
   .icon {
-    font-size: 30px;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 10px;
+    color: #4da6ff;
+  }
+
+  .icon svg {
+    width: 26px;
+    height: 26px;
+    display: block;
   }
 
   h3 {
