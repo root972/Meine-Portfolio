@@ -154,17 +154,27 @@
   font-size: 13px;
 }
 
-.project-list {
+.experience-list {
   display: grid;
   gap: 12px;
   margin: 16px 0 20px;
 }
 
-.project-item {
+.experience-item {
   padding: 16px;
   border: 1px solid #e0e0e0;
   border-radius: 12px;
   background: #fafafa;
+}
+
+.experience-item h4 {
+  margin-bottom: 8px;
+  color: #1f4e79;
+}
+
+.experience-item p {
+  margin: 0;
+  color: #555;
 }
 
 .contact-grid {
