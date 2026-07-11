@@ -1,0 +1,10 @@
+name: GitHub Actions fur Portfolio
+on: push
+
+jobs:
+  portfolio-job-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a greeting
+        run: echo "Hello World, my first GitHub Actions workflow is running!"
+  
